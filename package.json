@@ -1,6 +1,6 @@
 {
   "name": "@hp/warp-ticker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Configurable timer component for 'warp'",
   "main": "index.es6",
   "scripts": {
