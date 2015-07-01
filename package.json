@@ -1,0 +1,23 @@
+{
+  "name": "@hp/warp-ticker",
+  "version": "0.0.1",
+  "description": "Configurable timer component for 'warp'",
+  "main": "index.es6",
+  "scripts": {
+    "start": "babel-node --ignore=false --extensions='.es6' ./example.es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://stash.head-point.ru/scm/warp/warp-ticker.git"
+  },
+  "dependencies": {
+    "babel": "^5.6.14"
+  },
+  "keywords": [
+    "warp",
+    "component",
+    "timer"
+  ],
+  "author": "Николай Чурсин <n_chursin@head-point.ru>",
+  "license": "ISC"
+}
