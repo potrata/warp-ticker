@@ -21,7 +21,7 @@ export default class Ticker extends Component {
     }
   }
 
-  * destroy() {
+  * beforeDestroy() {
     this.stopTicking();
   }
 
@@ -36,7 +36,7 @@ export default class Ticker extends Component {
   startTicking() {
     if (this.stopped) {
       this.stopped = false;
-      setTimeout(() => { this.performTick(); }, this.config.interval * 100);
+      this.timer = setTimeout(() => { this.performTick(); }, this.config.interval * 100);
     }
   }
 
@@ -78,6 +78,7 @@ Ticker.events = {
 Ticker.defaults = {
   name: pkg.name,
   version: pkg.version,
+  desc: pkg.description,
 
   /** time (in 1/10th of second) between ticks */
   interval: 10,
