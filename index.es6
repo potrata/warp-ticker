@@ -1,7 +1,7 @@
 'use strict';
 
 import {isString} from 'util';
-import {Component, utils} from '@hp/warp';
+import {Component, utils} from 'node-warp';
 import pkg from './package.json';
 
 export default class Ticker extends Component {

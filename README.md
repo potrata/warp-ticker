@@ -1,14 +1,16 @@
-warp-ticker
+# warp-ticker
 ----
 
-### Overview
+## Overview
 Configurable timer component for 'warp'
 
-### Installation
+## Installation
 ``` bash
-$ npm install @hp/warp-ticker --save
+$ npm install warp-ticker --save
 ```
-### Running Example
+
+## Running Example
 ``` bash
-$ cd ./node_modules/@hp/warp-ticker && npm start
+$ cd ./node_modules/warp-ticker && npm run example
 ```
+

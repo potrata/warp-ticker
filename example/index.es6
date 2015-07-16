@@ -1,6 +1,6 @@
 'use strict';
 
-import warp from '@hp/warp';
+import warp from 'node-warp';
 
 let app = warp({ name: 'tick-tock', componentsRoot: '.' });
 
