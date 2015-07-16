@@ -1,6 +1,6 @@
 {
   "name": "warp-ticker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Configurable timer component for 'warp'",
   "main": "./dist/index.js",
   "scripts": {
