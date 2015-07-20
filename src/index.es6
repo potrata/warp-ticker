@@ -2,7 +2,7 @@
 
 import {isString} from 'util';
 import {Component, utils} from 'node-warp';
-import pkg from './package.json';
+import pkg from './../package.json';
 
 export default class Ticker extends Component {
   normalizeInterval() {

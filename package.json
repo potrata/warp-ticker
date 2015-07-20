@@ -2,21 +2,26 @@
   "name": "warp-ticker",
   "version": "0.0.4",
   "description": "Configurable timer component for 'warp'",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "build": "rm -rf ./dist && babel --source-maps=true --extensions='.es6' --copy-files -d ./dist ./",
-    "example": "npm run build && cd ./dist && node ./example/index.js"
+    "build": "rm -rf ./dist && babel --copy-files -d ./lib ./src",
+    "example": "npm run build && cd ./dist && node ./example/index.js",
+    "patch": "npm run build && npm version patch && git push origin --follow-tags && npm publish"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/potrata/warp-ticker.git"
   },
+  "bundleDependencies": [
+    "node-warp",
+    "babel-runtime"
+  ],
   "dependencies": {
-    "node-warp": "^1.0.5"
+    "node-warp": "^1.x.x",
+    "babel-runtime": "^5.x.x"
   },
   "devDependencies": {
-    "babel": "^5.x.x",
-    "babel-runtime": "^5.x.x"
+    "babel": "^5.x.x"
   },
   "keywords": [
     "warp",
